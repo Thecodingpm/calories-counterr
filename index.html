@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Calorie Counter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+               primary: {
+                DEFAULT: '#22c55e', // green-500
+                focus: '#16a34a', // green-600
+                content: '#ffffff',
+              },
+              secondary: {
+                DEFAULT: '#f97316', // orange-500
+              },
+              accent: {
+                DEFAULT: '#3b82f6', // blue-500
+              },
+              neutral: {
+                DEFAULT: '#374151', // gray-700
+                focus: '#1f2937', // gray-800
+              },
+              'base-100': '#ffffff',
+              'base-200': '#f9fafb', // gray-50
+              'base-300': '#f3f4f6', // gray-100
+              'base-content': '#1f2937', // gray-800
+              info: '#0ea5e9', // sky-500
+              success: '#22c55e', // green-500
+              warning: '#f59e0b', // amber-500
+              error: '#ef4444', // red-500
+            },
+          },
+        },
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.22.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

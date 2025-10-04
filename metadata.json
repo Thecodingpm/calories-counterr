@@ -1,0 +1,7 @@
+{
+  "name": "Copy of AI Calorie Counter",
+  "description": "A modern, AI-powered calorie tracking application. Log meals by searching a food database, creating custom entries, or simply by taking a picture. Visualize your progress with detailed charts and stay on top of your health goals.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
